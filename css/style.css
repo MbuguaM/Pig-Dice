@@ -1,0 +1,10 @@
+body{
+    text-align:center;
+}
+ul {
+    list-style-type:none;
+}
+
+#player-section{
+    display:none;
+}

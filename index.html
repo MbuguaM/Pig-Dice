@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- stylying files -->
+        <link href="css/bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+        <link href="css/style.css" type="text/css"  rel="stylesheet"/>
+        <!-- javascript files -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+        <script type="text/javascript" src="js/main.js" ></script>
+    </head>
+    <body>
+        <div class="container-fluid" >
+         <div class="row">
+           <div class="jumbotron"  id="top">
+            <h1>Pig dice</h1>
+           </div>
+           <form id="player-1">
+        </div> 
+        </div>
+
+
+       <div class="container">
+            <div class="signUp row">
+            <form>      
+            <div class="form-group">
+                    <label for="player1Name">Player 1 Name:</label>
+                    <input required class="player1Name form-control" type="text">
+                    </div>
+                </form>
+                <form id="player-2">
+                    <div class="form-group">
+                    <label for="player2Name">Player 2 Name:</label>
+                    <input required class="player2Name form-control" type="text">
+                    </div>
+                </form>
+                <button id="begin" class="btn-info btn">Start</button>
+          </div>
+      
+      
+       <!-- Players section -->
+       <div id="player-section" >
+            <button id="new-game" class="btn-success btn">NEW GAME</button>
+            <div class = "row">
+              <div class="col-md-6">
+                <h2>Player 1: <span id = "player1Name"><span></h2>
+                  <button id="player1-roll" class="btn-success btn">Roll</button>
+                  <button id="player1-hold" class="btn-success btn">Hold</button>
+                <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+                <p>Round Total: <span id="round-total-1"></span></p>
+                <p>Total Score: <span id="total-score-1"></span></p>
+              </div>
+    
+            <div class="col-md-6">
+              <h2>Player 2: <span id = "player2Name"><span></h2>
+                <button id="player2-roll" class="btn-success btn">Roll</button>
+                <button id="player2-hold" class="btn-success btn">Hold</button>
+                <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+                <p>Round Total: <span id="round-total-2"></span></p>
+                <p>Total Score: <span id="total-score-2"></span></p>
+            </div>
+         </div>
+         </div>
+         <div>
+         <p> 
+         Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+              <ul>
+                  <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                  <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                  <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+                  <li>The first player to score 100 or more points wins.</li>
+              </ul>  
+       </p>
+       </div>
+
+        
+        </div>
+    </body>
+</html>
